@@ -14,7 +14,7 @@ final class TeacherController {
     }
     
     func info(_ req: Request) throws -> Future<BaseModel<Teacher.Info>> {
-        let info = Teacher.Info(id: 222, name: "XXX老师", avatar: "https://static-www.putaocdn.com/pc/static/img/img_navbar_ptlogo_03.v202001061645.png")
+        let info = Teacher.Info(id: 222, name: "测试老师", avatar: "https://static-www.putaocdn.com/pc/static/img/img_navbar_ptlogo_03.v202001061645.png")
         return req.future(info.httpContent)
     }
     
